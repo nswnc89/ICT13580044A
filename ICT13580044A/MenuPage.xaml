@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="ICT13580044A.MenuPage"
+    Title="Menu"
+    Icon="icons8">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="200" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <BoxView
+            Color="#FFDDDD" />
+        <StackLayout
+            Orientation="Vertical"
+            VerticalOptions="End"
+            Margin="10">
+            <Image
+                Source="aaa.jpg"
+                WidthRequest="100"
+                HorizontalOptions="Start"
+                BackgroundColor="#A4C8F0" />
+            <Label
+                Text="Jean"
+                TextColor="Black"
+                FontAttributes="Bold" />
+            <Label
+                Text="Napatsorn Suwannachuen"
+                TextColor="Black"
+                FontAttributes="Bold" />
+        </StackLayout>
+        <BoxView
+            Grid.Row="1"
+            Color="#FDB4BF" />
+        <ScrollView
+            Grid.Row="1">
+            <StackLayout
+                Orientation="Vertical"
+                Padding="20">
+                <Label
+                    Text="View"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold" />
+                <Button
+                    x:Name="viewButton"
+                    Text="All Views"
+                    BackgroundColor="#F4EFAF" />
+                <BoxView
+                    Color="White"
+                    HeightRequest="3"
+                    Margin="10" />
+                <Label
+                    Text="Layout"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold" />
+                <Button
+                    x:Name="stackButton"
+                    Text="Stack Page"
+                    BackgroundColor="#F4EFAF" />
+                <Button
+                    x:Name="gridButton"
+                    Text="Grid Layout"
+                    BackgroundColor="#F4EFAF" />
+                <Button
+                    x:Name="absoluteButton"
+                    Text="Absolute Layout"
+                    BackgroundColor="#F4EFAF" />
+                <BoxView
+                    Color="White"
+                    HeightRequest="3"
+                    Margin="10" />
+                <Label
+                    Text="Layout"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold" />
+                <Button
+                    x:Name="contentButton"
+                    Text="Content Page"
+                    BackgroundColor="#F4EFAF" />
+                <Button
+                    x:Name="navButton"
+                    Text="Navigation Page"
+                    BackgroundColor="#F4EFAF" />
+                <Button
+                    x:Name="tabButton"
+                    Text="Tabbed Page"
+                    BackgroundColor="#F4EFAF" />
+                <Button
+                    x:Name="carouselButton"
+                    Text="Carousel Page"
+                    BackgroundColor="#F4EFAF" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+
+
+</ContentPage>
